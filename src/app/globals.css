@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +11,42 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.bg-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0px;
+}
+.text-animation{
+  animation: move 20s linear infinite;
+}
+.para:nth-child(2n+0){
+  color: lightgreen;
+}
+@keyframes move {
+  0%{
+    transform: translate(0,0);
+  }
+  100%{
+    transform: translate(-100%,0);
+  }
+}
+.hide{
+  display: none;
+}
+.unhide{
+  display: block;
+}
+.market-card{
+  background-image: url('/market.png');
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+}
+@media screen and (min-width:640){
+  .header{
+    display: none;
+  }
 }
