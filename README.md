@@ -1,3 +1,4 @@
+Hello Sir/Ma'am, I had gave my best to this frontend project ,but failed to make some responsiveness in small devices, but done my best on the large devices and it will be responsive in large devices and learnt much more from this project in less time.Thank you!
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
